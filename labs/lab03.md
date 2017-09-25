@@ -34,3 +34,10 @@
 }
     </style>
 ```
+
+1. In the **BODY** section, add a form tag as follows. add the a**action** abd **method** attributes.
+
+````
+    <form action="smoe.url" method="GET">
+    </form>
+```
