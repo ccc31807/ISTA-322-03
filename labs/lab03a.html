@@ -1,6 +1,6 @@
 <html>
     <head>
- 	<title>My first web page</title>
+ 	<title>My second web page</title>
     	<style>
        body 	{            
     font-family: sans-serif;
@@ -14,33 +14,38 @@
     	</style>
     </head>
     <body>
+	<!-- https://www.w3.org/TR/html5/ -->
         <h1>Hello world</h1>
     <form action="some.url" method="GET">
+	
+	<!-- START TABLE -->
+	<table rules="all">
 	<input type="hidden" id="secret" name="secret" value="Shhhhhhhh, my secret" />
-	First name: <input type="text" id="firstname" name="firstname" />
-	<br />
-	Last name: <input type="text" id="lastname" name="lastname" />
-	<br />
-	Password: <input type="password" id="password" name="password" />
-	<br />
-	Phone: <input type="tel" id="phone" name="phone" />
-	<br />
-	Email: <input type="email" id="email" name="email" />
-	<br />
-	Make your pizza:
-	<br />
-	<input type="checkbox" name="pizza" id="pizza" checked value="cheese" /> Cheese
-	<br />
-	<input type="checkbox" name="pizza" id="pizza" value="pepperoni" /> Pepperoni
-	<br />
-	<input type="checkbox" name="pizza" id="pizza" value="anchovies" /> Anchovies
-	<br />
-	<input type="checkbox" name="pizza" id="pizza" value="mushrooms" /> Mushrooms
-	<br />
+	<tr><td>First name:</td><td> <input type="text" id="firstname" name="firstname" /></td></tr>
+	
+	<tr><td>Last name:</td><td> <input type="text" id="lastname" name="lastname" /></td></tr>
+	
+	<tr><td>Password:</td><td> <input type="password" id="password" name="password" /></td></tr>
+	
+	<tr><td>Phone:</td><td> <input type="tel" id="phone" name="phone" /></td></tr>
+	
+	<tr><td>Email:</td><td> <input type="email" id="email" name="email" /></td></tr>
+	
+	<tr><td colspan=2>Make your pizza:</td></tr>
+	
+	<tr><td><input type="checkbox" name="pizza" id="pizza" checked value="cheese" /></td><td> Cheese</td></tr>
+	
+	<tr><td><input type="checkbox" name="pizza" id="pizza" value="pepperoni" /></td><td> Pepperoni</td></tr>
+	
+	<tr><td><input type="checkbox" name="pizza" id="pizza" value="anchovies" /></td><td>Anchovies</td></tr>
+	
+	<tr><td><input type="checkbox" name="pizza" id="pizza" value="mushrooms" /> </td><td>Mushrooms</td></tr>
+	<tr><td colspan=2>
 	<input type="radio" name="sex" id="sex" value="male" /> Male
 	<input type="radio" name="sex" id="sex" value="female" /> Female
 	<input type="radio" name="sex" id="sex" value="other" checked /> Prefer not to answer
-	<br /><br /><hr /><br />
+	</td></tr>
+	<tr><td>Single option list</td><td>
 	<select name="class" id="class">
 		<option value="Donald">Donald</option>
 		<option value="Barack">Barack</option>
@@ -52,7 +57,8 @@
 		<option value="Jerry">Jerry</option>
 		<option value="Tricky Dick">Tricky Dick</option>
 	</select>
-	<br /><hr /><br />
+	</td></tr>
+	<tr><td>Multiple option list</td><td>
 	<select name="class" id="class1" multiple>
 		<option value="Donald">Donald</option>
 		<option value="Barack">Barack</option>
@@ -63,7 +69,8 @@
 		<option value="Jimmy">Jimmy</option>
 		<option value="Jerry">Jerry</option>
 		<option value="Tricky Dick">Tricky Dick</option>
-	</select><br /><hr /><br />
+	</select>
+	</td></tr>
 	<select name="class" id="class2" size=7>
 		<option value="Donald">Donald</option>
 		<option value="Barack">Barack</option>
@@ -75,11 +82,26 @@
 		<option value="Jerry">Jerry</option>
 		<option value="Tricky Dick">Tricky Dick</option>
 	</select>
-	<br /><br /><hr /><br />
+	</table>
 	<textarea name="comment" id="comment" rows=4 cols=60>Leave your comment here</textarea>
 	<br />
 	<input type="submit" value="Click Me" /> <input type="reset" value="Clear Form" />
+	
+		
+		
     </form>
 
+	<!-- TABLE EXAMPLE -->
+		<table rules="all" style="border: black 1px">
+			<tr>
+				<th> First</th><th>Last </th><th> Party</th>
+			</tr>
+			<tr>
+				<td>Hubert </td><td>Humphery</td><td>Dem </td>
+			</tr>
+			<tr>
+				<td>Lyndon </td><td>Johnson</td><td>Dem </td>
+			</tr>
+		</table>
     </body>
 </html>
