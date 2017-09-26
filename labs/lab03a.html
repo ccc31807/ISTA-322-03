@@ -7,8 +7,8 @@
     margin: 36px 36px;
     background-color: #f9f9f9;
     color: #aa0033;
-    font-size: 11pt;
-    border: 1px solid #ff0000;
+    font-size: 12pt;
+    border: 1px solid #00ff00;
     padding: 36px;
 		}
     	</style>
@@ -19,7 +19,7 @@
     <form action="some.url" method="GET">
 	
 	<!-- START TABLE -->
-	<table rules="all">
+	<table rules="none">
 	<input type="hidden" id="secret" name="secret" value="Shhhhhhhh, my secret" />
 	<tr><td>First name:</td><td> <input type="text" id="firstname" name="firstname" /></td></tr>
 	
@@ -45,6 +45,7 @@
 	<input type="radio" name="sex" id="sex" value="female" /> Female
 	<input type="radio" name="sex" id="sex" value="other" checked /> Prefer not to answer
 	</td></tr>
+	<tr style="color: red; background-color: #123456;"><td colspan=2 style="text-align: center; font-weight: 700;">Select Lists</td></tr>
 	<tr><td>Single option list</td><td>
 	<select name="class" id="class">
 		<option value="Donald">Donald</option>
@@ -71,6 +72,7 @@
 		<option value="Tricky Dick">Tricky Dick</option>
 	</select>
 	</td></tr>
+<tr><td>Long option list</td><td>	
 	<select name="class" id="class2" size=7>
 		<option value="Donald">Donald</option>
 		<option value="Barack">Barack</option>
@@ -82,16 +84,17 @@
 		<option value="Jerry">Jerry</option>
 		<option value="Tricky Dick">Tricky Dick</option>
 	</select>
-	</table>
+	</td></tr>
+	<tr><td colspan=2>
 	<textarea name="comment" id="comment" rows=4 cols=60>Leave your comment here</textarea>
-	<br />
-	<input type="submit" value="Click Me" /> <input type="reset" value="Clear Form" />
-	
+	</td></tr>
+	<tr style="text-align: center; background-color: #123456;"><td><input type="submit" value="Click Me" /></td><td> <input type="reset" value="Clear Form" /></td><tr>
+	</table>
 		
 		
     </form>
 
-	<!-- TABLE EXAMPLE -->
+	<!-- TABLE EXAMPLE 
 		<table rules="all" style="border: black 1px">
 			<tr>
 				<th> First</th><th>Last </th><th> Party</th>
@@ -102,6 +105,6 @@
 			<tr>
 				<td>Lyndon </td><td>Johnson</td><td>Dem </td>
 			</tr>
-		</table>
+		</table> -->
     </body>
 </html>
