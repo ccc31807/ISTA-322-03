@@ -20,7 +20,7 @@
 
 1. Add these elements to the HEAD element.
 
-```
+    ```
     <title>My first web page</title>
     <style>
        body {            
@@ -33,11 +33,11 @@
     padding: 36px;
 }
     </style>
-```
+    ```
 
 1. In the **BODY** section, add a form tag as follows. add the a**action** abd **method** attributes.
 
-````
-    <form action="smoe.url" method="GET">
+    ````
+    <form action="some.url" method="GET">
     </form>
-```
+    ```
